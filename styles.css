@@ -1,0 +1,61 @@
+/* ✅ Final styles.css for Philonet Landing Page */
+
+body { margin: 0; font-family: 'Inter', sans-serif; color: #4D4D4D; }
+
+header { display: flex; justify-content: flex-end; align-items: center; padding: 16px 32px; background: #fff; box-shadow: 0 4px 8px rgba(171,190,209,0.4); position: sticky; top: 0; z-index: 10; gap: 16px; animation: slideDown 1s ease; }
+
+nav { display: flex; align-items: center; gap: 16px; }
+
+nav a { text-decoration: none; color: #4D4D4D; font-weight: 500; font-size: 16px; transition: color 0.3s; }
+
+nav a:hover { color: #4CAF4F; }
+
+.register-button, .learn-more { background: #4CAF4F; color: #fff; border: none; padding: 10px 16px; border-radius: 4px; font-weight: 500; font-size: 16px; cursor: pointer; transition: background 0.3s; }
+
+.register-button:hover, .learn-more:hover { background: #43a047; }
+
+.hero { display: flex; flex-direction: column-reverse; align-items: center; text-align: center; padding: 40px 20px; background: #F5F7FA; animation: fadeIn 1s ease; }
+
+.hero img { max-width: 450px; width: 100%; height: auto; margin-bottom: 20px; }
+
+.hero h1 { font-size: 32px; font-weight: 700; color: #000; }
+
+.hero h1 span { color: #4CAF4F; }
+
+.hero p { font-size: 18px; max-width: 500px; margin: 16px auto; }
+
+.clients, .features, .community { padding: 40px 20px; text-align: center; animation: fadeIn 1.5s ease; }
+
+.client-logos img.client-logo-big { width: 95%; max-width: 750px; height: auto; transition: transform 0.3s; }
+
+.client-logos img.client-logo-big:hover { transform: scale(1.05); }
+
+.feature-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-top: 24px; }
+
+.feature-card { background: #fff; border: 1px solid #E0E0E0; border-radius: 8px; padding: 20px; max-width: 300px; flex: 1; transition: transform 0.3s; }
+
+.feature-card:hover { transform: translateY(-8px); }
+
+.feature-card h3 { color: #000; font-size: 20px; font-weight: 700; margin: 12px 0; }
+
+.feature-card p { font-size: 14px; }
+
+.feature-icon-big { width: 100px; height: auto; margin-bottom: 12px; }
+
+.community-content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+
+.community img { max-width: 400px; width: 100%; height: auto; }
+
+.community h2 { font-size: 24px; font-weight: 700; color: #000; }
+
+.community p { max-width: 500px; }
+
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media(min-width: 768px) {
+  .hero { flex-direction: row; justify-content: space-between; text-align: left; padding: 80px; }
+  .hero img { margin: 0; }
+  .community-content { flex-direction: row; text-align: left; justify-content: center; align-items: center; gap: 40px; }
+}
